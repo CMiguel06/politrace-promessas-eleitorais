@@ -1,0 +1,8 @@
+flowchart TD
+    A[Texto inserido] --> B[Normalizacao local]
+    B --> C[Regras heuristicas]
+    C --> D{Tem compromisso mensuravel?}
+    D -->|Sim| E[Classificacao provavel]
+    D -->|Nao| F[Texto vago ou retorico]
+    E --> G[Resultado no browser]
+    F --> G

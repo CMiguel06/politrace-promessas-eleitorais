@@ -1,0 +1,11 @@
+flowchart TD
+    U[Utilizador] --> B[Browser]
+    B --> SSR[TanStack Start / SSR]
+    SSR --> R[TanStack Router]
+    R --> L[Layout global]
+    L --> P[Rotas e paginas]
+    P --> D[src/lib/politrace-data.ts]
+    P --> C[Componentes do projeto]
+    C --> CSS[Tailwind CSS e tokens semanticos]
+    P --> H[Classificador heuristico local]
+    P --> E[Exportacao local de relatorios]

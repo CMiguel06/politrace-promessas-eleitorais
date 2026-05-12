@@ -1,0 +1,45 @@
+classDiagram
+    class SourceReference {
+      label
+      url
+      checkedAt
+      note
+    }
+    class Party {
+      id
+      sigla
+      nome
+      familiaIdeologica
+      fontes
+    }
+    class Election {
+      id
+      nome
+      tipo
+      data
+      fontes
+    }
+    class PoliticalDocument {
+      id
+      titulo
+      tipo
+      eleicaoId
+      partidoId
+      url
+    }
+    class PoliticalPromise {
+      id
+      titulo
+      partidoId
+      eleicaoId
+      documentoId
+      status
+      evidencias
+    }
+
+    Party --> SourceReference
+    Election --> SourceReference
+    PoliticalDocument --> SourceReference
+    PoliticalPromise --> Party
+    PoliticalPromise --> Election
+    PoliticalPromise --> PoliticalDocument

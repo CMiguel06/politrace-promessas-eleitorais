@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+.output/
+.vinxi/
+.tanstack/
+.nitro/
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# Cache
+.cache/
+.eslintcache
+.vite/
+coverage/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Visual Studio / Windows project files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,17 @@
+sequenceDiagram
+    participant U as Utilizador
+    participant B as Browser
+    participant S as TanStack Start SSR
+    participant R as TanStack Router
+    participant L as Layout
+    participant P as Pagina
+    participant D as politrace-data.ts
+
+    U->>B: Acede a uma rota
+    B->>S: Pedido HTTP
+    S->>R: Resolve rota
+    R->>L: Renderiza layout global
+    L->>P: Renderiza outlet da pagina
+    P->>D: Importa dados estaticos
+    D-->>P: Arrays e tipos
+    P-->>B: HTML, JS e CSS renderizados
