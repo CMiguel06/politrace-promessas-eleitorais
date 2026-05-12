@@ -1,121 +1,46 @@
-# PoliTrace - Promessas Eleitorais
+# PoliTrace — Observatório Digital de Promessas Eleitorais
 
-Observatorio digital para catalogar, pesquisar e acompanhar promessas eleitorais e compromissos politicos com base em documentos publicos verificaveis.
+<img width="664" height="647" alt="image" src="https://github.com/user-attachments/assets/18c91752-b179-419d-9bd8-63113ecbb4e8" />
 
-## Problema
+<img width="712" height="644" alt="image" src="https://github.com/user-attachments/assets/0867dfb0-9727-4071-b77f-34f5e1e6b42f" />
 
-Programas eleitorais, listas de candidatos, resultados e compromissos politicos tendem a estar dispersos por varias fontes. O PoliTrace organiza esse universo num prototipo web que separa dados eleitorais, documentos de origem, promessas identificadas, estados de cumprimento e evidencias.
+<img width="661" height="647" alt="image" src="https://github.com/user-attachments/assets/27f9d69c-8b30-4075-b750-7ee0d45d96e8" />
 
-## Funcionalidades principais
 
-- Dashboard com indicadores agregados do corpus.
-- Catalogo de promessas com filtros por area, partido e estado.
-- Consulta de partidos, eleicoes, documentos e evidencias.
-- Comparador entre forcas politicas e areas programaticas.
-- Classificador exploratorio "Promessa ou Fumo?" para avaliar mensurabilidade de texto.
-- Paginas de metodologia, etica, relatorios e enquadramento do projeto.
 
-## Tecnologias
+O PoliTrace é um protótipo académico de Engenharia Informática orientado à identificação, classificação, pesquisa e monitorização de promessas eleitorais e compromissos políticos presentes em documentos públicos.
 
-- TypeScript
-- React 19
-- TanStack Router
-- TanStack Start
-- TanStack Query
-- Vite
-- Tailwind CSS 4
-- Cloudflare Workers via Wrangler/Vite plugin
-- ESLint e Prettier
+## Objectivo
 
-## Estrutura do projeto
+Promover transparência democrática através de uma plataforma que permite consultar promessas políticas, acompanhar o seu estado de cumprimento e comparar prioridades programáticas entre partidos.
 
-```text
-.
-|-- .github/
-|   |-- ISSUE_TEMPLATE/
-|   |-- workflows/
-|   `-- pull_request_template.md
-|-- docs/
-|   |-- architecture/
-|   |   |-- diagrams/
-|   |   |-- components.md
-|   |   |-- data-flow.md
-|   |   |-- decisions.md
-|   |   `-- overview.md
-|   `-- usage/
-|       `-- getting-started.md
-|-- src/
-|   |-- components/
-|   |-- lib/
-|   |-- routes/
-|   |-- router.tsx
-|   |-- server.ts
-|   |-- start.ts
-|   `-- styles.css
-|-- CHANGELOG.md
-|-- CONTRIBUTING.md
-|-- LICENSE
-|-- SECURITY.md
-|-- package.json
-|-- tsconfig.json
-|-- vite.config.ts
-`-- wrangler.jsonc
-```
+## Áreas científicas
 
-## Instalação
+- Engenharia Informática
+- Processamento de Linguagem Natural
+- Ciência de Dados
+- Ciência Política
+- Sistemas de Informação
+- Fact-checking
+- Ética Algorítmica
+- Visualização de Dados
 
-Requisitos:
+## Funcionalidades
 
-- Node.js 22 ou superior
-- npm
+- Motor de busca de promessas eleitorais
+- Detector de promessas em documentos políticos
+- Classificação por área temática
+- Avaliação do grau de mensurabilidade
+- Acompanhamento do estado de cumprimento
+- Comparação entre partidos
+- Análise documental de tendências ideológicas
+- Registo de fontes e evidências
+- Geração de relatórios técnicos
 
-```bash
-npm ci
-```
+## Limitações
 
-## Execução local
-
-```bash
-npm run dev
-```
-
-O Vite disponibiliza a aplicacao localmente no URL indicado no terminal.
-
-## Qualidade e build
-
-```bash
-npm run typecheck
-npm run lint
-npm run build
-```
-
-## Exemplos de utilizacao
-
-- Aceder ao Dashboard para ver totais de partidos, documentos, eleicoes e promessas.
-- Usar a pesquisa de promessas para filtrar compromissos por texto, area ou partido.
-- Consultar "Documentos" para confirmar as fontes eleitorais registadas.
-- Usar "Promessa ou Fumo?" para testar se uma frase contem compromisso mensuravel.
-
-## Screenshots
-
-Nao existem screenshots versionadas nesta versao limpa. As imagens externas anteriormente referenciadas no README nao foram preservadas como assets locais.
-
-## Estado atual
-
-Protótipo academico funcional. A base contem partidos, eleicoes e documentos de referencia para o contexto Madeira 2025. O catalogo de promessas esta intencionalmente vazio ate existir recolha documental validada para cada promessa.
-
-## Roadmap
-
-- Recolher programas eleitorais com URL, data de consulta e metadados.
-- Popular `PROMISES` apenas com compromissos rastreaveis a documentos.
-- Adicionar testes unitarios para funcoes de classificacao e agregacao.
-- Introduzir persistencia de dados quando o corpus deixar de ser estatico.
-- Criar screenshots locais em `docs/screenshots/` quando houver versao visual estabilizada.
+Este projecto tem finalidade académica e educativa. Não recomenda voto, não produz propaganda, não substitui análise jornalística ou científica especializada e não deve ser utilizado para microtargeting político.
 
 ## Autor
 
-Caio Camacho.
-
-## Licença
-
-Distribuido sob a licenca MIT. Ver [LICENSE](LICENSE).
+Projecto idealizado, concebido e produzido por Caio Camacho.
